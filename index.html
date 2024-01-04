@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51bfa619a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo-removebg-preview.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Chamika </span><br> From Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+<!----About------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user1.jpg">
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a self-motivated undergraduate student with a strong analytical skill
+                        set, I am determined to leverage my academic background for
+                        professional excellence. My vision is to apply my knowledge and
+                        contribute to a brighter future for both my prospective employer and
+                        myself. I aspire to advance my career and become a valuable team
+                        member in a dynamic and challenging workplace environment.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Cources & Certificates</p>
+                            <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span><h3>Web Development</h3></span><br>HTML<br>CSS<br>JavaScript<br>PHP,MySQL</li>
+                                <li><span><h3>Programming</h3></span><br>Java<br>VB.Net</li>
+                                <li><span><h3>>Graphic Design</h3></span><br>Adobe Photoshop<br>Primear Pro<br>Adobe Animate</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>HTML Course in Solalearn - 2022</li>
+                                <li>JavaScript Practicals Crash Course - 2023</li>
+                                <li>Java Training Complete Course - 2023</li>
+                                <li>Web Development Wizardry: HTML & CSS Course for Biginners-2023</li>
+                                <li>Developing Front-End Apps with React(ongoing)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="educations">
+                            <ul>
+                                <li><span><h3>undergraduate University Of Sabaragamuwa in Sri Lanka</h3></span>
+                                <br>BA Hons In Information and Communication Technology
+                                <br> Department of Economics and Statistics
+                                 <br> Faculty of Social Sciences & Languages</li>
+                                    
+                                <li><span><h3>Passed G.C.E  A/L Examination in 2018</h3></span><br>1A | 2Bs - Batemulla National College - Galle </li>
+                                <li><span><h3>Passed G.C.E  O/L Examination in 2014</h3></span><br>4As | 3Bs | 1C - Batemulla National College - Galle </li>
+                            </ul>
+                        </div>
+                </div>
+            </div> 
+  
+        </div>
+    </div>
+
+    <!------Sevices--------->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web development</h1>
+                    <p>HTML,CSS,JavaScript<br>PHP,MySql</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h1>Programme</h1>
+                    <p>Java<br>VB.net</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-desktop"></i> 
+                    <h1>Designing</h1>
+                    <p>Adobe photoshop<br>Adobe animate<br>CoralDraw</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------portfolio--------->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="java2.jpg">
+                    <div class="layer">
+                        <h3>Java Project</h3>
+                        <h2>Spices Exporting Company Managemnt System</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://github.com/TGUmayanga/Spices_Exporting_Company_Management_System"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="cafe2.jpg">
+                    <div class="layer">
+                        <h3>VB.Net Project</h3>
+                        <h2>Pink Arcade Odrring System</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://github.com/TGUmayanga/PinkHutCafe"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="php.jpg">
+                    <div class="layer">
+                        <h3>PHP CodeIgniter Crud System</h3>
+                        <h2>Employee Managemnt System</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://github.com/TGUmayanga/Employee-Management-System"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="jaye.jpg">
+                    <div class="layer">
+                        <h3>Wordpress Website</h3>
+                        <h2>Jayasekara Optical Website</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://drive.google.com/file/d/135YqslUj93F3qFJ73VTCos9Psn4o8O6u/view"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="animate.jpg">
+                    <div class="layer">
+                        <h3>Animate Project</h3>
+                        <h2>About Fishing Attack</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://drive.google.com/file/d/12H60khnh-zgmkYPfkHh7ZkxYon-TaRBi/view"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------Contact-------->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane">&nbsp; &nbsp;</i>chamikaumayanga201@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume">&nbsp; &nbsp;</i>077-0350508</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61550093236314&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/chamikaumayanga6?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/chamika-umayanga-7a7905290"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/TGUmayanga"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                    <a href="T.G.Chamika Umayanga.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                       
+                         <input type="text" name="Name" placeholder="Your Name" required>
+                         <input type="email" name="email" placeholder="your Email" required>
+                         <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                         <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+        
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+        
+    </script>
+    
+</body>
+</html>
