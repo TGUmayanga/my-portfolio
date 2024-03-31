@@ -3,60 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio</title>
-
-    <!--css files----->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51bfa619a9.js" crossorigin="anonymous"></script>
+</head>
 <body>
-   
-    <!----------main container start--------->
-    <div class="main-container">
-        <div class="aside">
-            <div class="logo">
-                <a href="#"><span>C</span>Roky</a>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="Closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Chamika </span><br> From Sri Lanka</h1>
             </div>
-            <div class="nav-toggler">
-                <span></span>
-                
-            </div>
-            <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"> Home </i></a></li>
-                <li><a href="#"><i class="fa fa-user"> About </i></a></li>
-                <li><a href="#"><i class="fa fa-list"> Services </i></a></li>
-                <li><a href="#"><i class="fa fa-briefcase"> Portfolio </i></a></li>
-                <li><a href="#"><i class="fa fa-comments"> Contact </i></a></li>
-            </ul> 
         </div>
-        <div class="main-content">
-            <selection class="home selection">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, My Name is <span class="name">Chamika Umayanga</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
-                            <p>A web developer is a professional who specializes in building and maintaining websites and web applications. They use programming languages such as HTML, CSS, and JavaScript to create the visual layout, design, and functionality of websites. Web developers may also work with server-side languages like PHP, Python, or Ruby on Rails, as well as databases such as MySQL or MongoDB to handle the backend logic and data management of websites.</p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
-                        </div>
-                            <div class="home-img padd-15">
-                                <img src="images/user1.jpg" alt="">
-                            </div>
-                    </div>
+    </div>
+<!----About------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user1.jpg">
                 </div>
-            </selection>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a self-motivated undergraduate student with a strong analytical skill
+                        set, I am determined to leverage my academic background for
+                        professional excellence. My vision is to apply my knowledge and
+                        contribute to a brighter future for both my prospective employer and
+                        myself. I aspire to advance my career and become a valuable team
+                        member in a dynamic and challenging workplace environment.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Cources & Certificates</p>
+                            <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span><h3>Web Development</h3></span><br>HTML<br>CSS<br>JavaScript<br>React<br>PHP,<br>MySQL</li>
+                                <li><span><h3>Programming</h3></span><br>Java<br>VB.Net</li>
+                                <li><span><h3>>Graphic Design</h3></span><br>Adobe Photoshop<br>Primear Pro<br>Adobe Animate</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>HTML Course in Solalearn - 2022</li>
+                                <li>JavaScript Practicals Crash Course - 2023</li>
+                                <li>Java Training Complete Course - 2023</li>
+                                <li>Web Development Wizardry: HTML & CSS Course for Biginners-2023</li>
+                                <li>Developing Front-End Apps with React(ongoing)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="educations">
+                            <ul>
+                                <li><span><h3>undergraduate University Of Sabaragamuwa in Sri Lanka</h3></span>
+                                <br>BA Hons In Information and Communication Technology
+                                <br> Department of Economics and Statistics
+                                 <br> Faculty of Social Sciences & Languages</li>
+                                    
+                                <li><span><h3>Passed G.C.E  A/L Examination in 2018</h3></span><br>1A | 2Bs - Batemulla National College - Galle </li>
+                                <li><span><h3>Passed G.C.E  O/L Examination in 2014</h3></span><br>4As | 3Bs | 1C - Batemulla National College - Galle </li>
+                            </ul>
+                        </div>
+                </div>
+            </div> 
+  
         </div>
     </div>
 
-    <!----------main container End--------->
-        
+    <!------Sevices--------->
 
-    <!----------js fies-------->
-    <script src="js/script.js"></script>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web development</h1>
+                    <p>HTML,CSS,JavaScript<br>PHP,MySql</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h1>Programme</h1>
+                    <p>Java<br>VB.net</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-desktop"></i> 
+                    <h1>Designing</h1>
+                    <p>Adobe photoshop<br>Adobe animate<br>CoralDraw</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------portfolio--------->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="java2.png">
+                    <div class="layer">
+                        <h3>Java Project</h3>
+                        <h2>Spices Exporting Company Managemnt System</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://github.com/TGUmayanga/Spices_Exporting_Company_Management_System"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="cafe2.jpg">
+                    <div class="layer">
+                        <h3>VB.Net Project</h3>
+                        <h2>Pink Arcade Odrring System</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://github.com/TGUmayanga/PinkHutCafe"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="php.jpg">
+                    <div class="layer">
+                        <h3>PHP CodeIgniter Crud System</h3>
+                        <h2>Employee Managemnt System</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://github.com/TGUmayanga/Employee-Management-System"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="jaye.jpg">
+                    <div class="layer">
+                        <h3>Wordpress Website</h3>
+                        <h2>Jayasekara Optical Website</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://drive.google.com/file/d/135YqslUj93F3qFJ73VTCos9Psn4o8O6u/view"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="hela.png">
+                    <div class="layer">
+                        <h3>Sabra's helabojun Website</h3>
+                        <h2>Build using for JavaScript React </h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://github.com/TGUmayanga/Sabra-Helabojun-Web.git"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="animate.jpg">
+                    <div class="layer">
+                        <h3>Animate Project</h3>
+                        <h2>About Fishing Attack</h2>
+                        <p>The app contents you to the telented people around the world.Download it from play store</p>
+                        <a href="https://drive.google.com/file/d/12H60khnh-zgmkYPfkHh7ZkxYon-TaRBi/view"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="https://drive.google.com/file/d/1J9aVjf3EdXP432xPvuJqPe89vEv_47R9/view?usp=sharing" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------Contact-------->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane">&nbsp; &nbsp;</i>chamikaumayanga201@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume">&nbsp; &nbsp;</i>077-0350508</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61550093236314&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/chamikaumayanga6?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/chamika-umayanga-7a7905290"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/TGUmayanga"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                    <a href="https://drive.google.com/file/d/1RzIVuALvm10ql515_m4iS04wnE-RZSzd/view?usp=sharing" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                       
+                         <input type="text" name="Name" placeholder="Your Name" required>
+                         <input type="email" name="email" placeholder="your Email" required>
+                         <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                         <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+       
+        
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function Closemenu(){
+            sidemenu.style.right = "-200px"; 
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbybrzLJjW-kJNhYR8L9OiU9x28L2uIDU9Xy6NlPpCodSd4yv-bgOOnfJDv1mNVgWr30RA/exec'
+        const form = document.forms['submit-to-google-sheet'] 
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully"; setTimeout(function(){msg.innerHTML =""},5000); form.reset()})
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
 </body>
-</html>
+</html> 
