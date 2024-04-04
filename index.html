@@ -3,268 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/51bfa619a9.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio</title>
+
+    <!--css files----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--------style switcher-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="logo-removebg-preview.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact </a></li>
-                    <i class="fas fa-solid fa-circle-xmark" onclick="Closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-
-            <div class="header-text">
-                <p>Front End Developer</p>
-                <h1>Hi, I'm <span>Chamika </span><br> From Sri Lanka</h1>
+<body class="dark">
+   
+    <!----------main container start--------->
+    <div class="main-container">
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>C</span>Roky</a>
             </div>
+            <div class="nav-toggler">
+                <span></span>
+                
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"> Home </i></a></li>
+                <li><a href="#about"><i class="fa fa-user"> About </i></a></li>
+                <li><a href="#services"><i class="fa fa-list"> Services </i></a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"> Portfolio </i></a></li>
+                <li><a href="#contact"><i class="fa fa-comments"> Contact </i></a></li>
+            </ul> 
         </div>
-    </div>
-<!----About------>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="user1.jpg">
+        <div class="main-content">
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, My Name is <span class="name">Chamika Umayanga</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
+                            <p>As a self-motivated undergraduate student with a strong analytical skill
+                                set, I am determined to leverage my academic background for
+                                professional excellence. My vision is to apply my knowledge and
+                                contribute to a brighter future for both my prospective employer and
+                                myself. I aspire to advance my career and become a valuable team
+                                member in a dynamic and challenging workplace environment.</p>
+                            <a href="#contact" class="btn-hire-me">Hire Me</a>
+                        </div>
+                            <div class="home-img padd-15">
+                                <img src="images/user1.jpg" alt="">
+                            </div>
+                    </div>
                 </div>
-                <div class="about-col-2 ">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>As a self-motivated undergraduate student with a strong analytical skill
-                        set, I am determined to leverage my academic background for
-                        professional excellence. My vision is to apply my knowledge and
-                        contribute to a brighter future for both my prospective employer and
-                        myself. I aspire to advance my career and become a valuable team
-                        member in a dynamic and challenging workplace environment.</p>
+            </section>
+            <!-------About selection start------>
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'm Chamika Umayanga and <span>Web Developer</span></h3>
+                                    <p>As a self-motivated undergraduate student with a strong analytical skill
+                                        set, I am determined to leverage my academic background for
+                                        professional excellence. My vision is to apply my knowledge and
+                                        contribute to a brighter future for both my prospective employer and
+                                        myself. I aspire to advance my career and become a valuable team
+                                        member in a dynamic and challenging workplace environment.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-information padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday: <span>08 May 1998</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age: <span> 26 Years</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Website: <span>chamikaumayanga.online</span></p>
+                                        </div>
+                                        
+                                        <div class="info-item padd-15">
+                                            <p>Degree: <span>BA Hons in ICT</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone: <span>077-0350508</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City: <span>Galle</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Working Now: <span>Its DATA Link</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email: <span>chamikaumayanga201@gmail</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="button padd-15">
+                                            <a href="https://drive.google.com/file/d/10BfbgpYykRmnOGO6phweACnNgqjTrZ1_/view?usp=sharing" class="btn">Download CV</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:76%;"></div>
+                                                <div class="skill-percent">76%</div>
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Cources & Certificates</p>
-                            <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:76%;"><span class="css"></span></div>
+                                                <div class="skill-percent">76%</div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>JavaScript</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:76%;"></div>
+                                                <div class="skill-percent">76%</div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>java</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:76%;"></div>
+                                                <div class="skill-percent">76%</div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>PHP</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width:76%;"></div>
+                                                <div class="skill-percent">76%</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="education padd-15">
+                                   <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--------timeline------->>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2020 - 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">BA Hons In Information and Communication Technology  </h4>
+                                                    <p class="timeline-text"> Department of Economics and Statistics<br>
+                                                        Faculty of Social Sciences & Languages<br>
+                                                        The Sabaragamuwa University of Sri Lanka(UG)
+                                                        </p>
+                                                </div>
+
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date"><br>
+                                                        <i class="fa fa-calendar"> </i> 2015 - 2018
+                                                    </h3>
+                                                    <h4 class="timeline-title">Advanced Level Examination </h4>
+                                                    <p class="timeline-text"> Accounting - A<br>
+                                                        Business - A<br>
+                                                        Economics - B
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3> 
+
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--------timeline------->>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">ITS DATA Link Business Solution Pvt Ltd </h4>
+                                                    <p class="timeline-text"> Tranee Software Engineer</p>
+                                                        
+                                                        
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-------About selection End------>
+            <!----Service section start------>
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!----service item Start-->
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui commodi eum.</p>
+                            </div>
                         </div>
 
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span><h3>Web Development</h3></span><br>HTML<br>CSS<br>JavaScript<br>React<br>PHP,<br>MySQL</li>
-                                <li><span><h3>Programming</h3></span><br>Java<br>VB.Net</li>
-                                <li><span><h3>>Graphic Design</h3></span><br>Adobe Photoshop<br>Primear Pro<br>Adobe Animate</li>
-                            </ul>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui commodi eum.</p>
+                            </div>
                         </div>
 
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li>HTML Course in Solalearn - 2022</li>
-                                <li>JavaScript Practicals Crash Course - 2023</li>
-                                <li>Java Training Complete Course - 2023</li>
-                                <li>Web Development Wizardry: HTML & CSS Course for Biginners-2023</li>
-                                <li>Developing Front-End Apps with React(ongoing)</li>
-                            </ul>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Developing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui commodi eum.</p>
+                            </div>
                         </div>
 
-                        <div class="tab-contents" id="educations">
-                            <ul>
-                                <li><span><h3>undergraduate University Of Sabaragamuwa in Sri Lanka</h3></span>
-                                <br>BA Hons In Information and Communication Technology
-                                <br> Department of Economics and Statistics
-                                 <br> Faculty of Social Sciences & Languages</li>
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa solid fa-gear"></i>
+                                </div>
+                                <h4>Software Testing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui commodi eum.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa -brands fa-youtube"></i>
+                                </div>
+                                <h4>Content Creating</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque qui commodi eum.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!----Service section End------>
+
+            <!----Portfolio section start------>
+
+            <section class="Portfolio section " id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="portfolio-heading padd-15">
+                        <h2>My Last projects : </h2>
+                    </div>
+                    <div class="row">
+                        <!--------portfolio Item start-->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/hela.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/java2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/php.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/jaye.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/pink hut cafe.jpeg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        <!--------portfolio Item End-->
+
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <!----Portfolio section End------>
+
+            <!----Contact section Start------>
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+                    
+                    <h4 class="contact-sub-title padd-15"> I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-------------Contact info item start-- -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+94 770350508</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>FaceBook</h4>
+                            <p>chamikaumayanga</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>E-mail</h4>
+                            <p>chamikaumayanga201@gmail</p>
+                        </div>
+
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <h4>Website</h4>
+                            <p>chamikaumayanga</p>
+                        </div>
+                        <!-------------Contact info item End--->
+                    </div>
+                    <h3 class="contact-title padd-15">SEND  ME AN EMAIL</h3>
+                    
+                    <h4 class="contact-sub-title padd-15"> I'M VERY RESPONSIVE TO YOUR MESSAGE  </h4>
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+
                                     
-                                <li><span><h3>Passed G.C.E  A/L Examination in 2018</h3></span><br>1A | 2Bs - Batemulla National College - Galle </li>
-                                <li><span><h3>Passed G.C.E  O/L Examination in 2014</h3></span><br>4As | 3Bs | 1C - Batemulla National College - Galle </li>
-                            </ul>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                   <div class="form-group">
+                                       <input type="text" class="form-control"  placeholder="Subject">
+                                   </div>
+                                </div>
+                           </div>
+                           <div class="row"> 
+                            <div class="form-item col-12 padd-15">
+                               <div class="form-group">
+                                   <textarea name="" class="form-control" id=" " placeholder="Message"></textarea>
+                               </div>
+                            </div>
+                       </div>
+
+                        </div> 
+                    </div>
+                    
+
+                    
+
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                           <button type="submit" class="btn">Send Message</button>
                         </div>
+                   </div>
                 </div>
-            </div> 
+
+            </section>  
+            <!----Contact section End------>
+            <!-----------Style switcher start------>
+            <div class="style-switcher">
+                <div class="style-switcher-toggler s-icon">
+                    <i class="fas fa-cog fa-spin"></i>
+                </div>
+                <div class="day-night s-icon">
+                    <i class="fas "></i>
+                </div>
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                </div>
+            </div>
+            <!-----------Style switcher End------>
+
+        </div>
+    </div>
   
-        </div>
-    </div>
-
-    <!------Sevices--------->
-
-
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h1>Web development</h1>
-                    <p>HTML,CSS,JavaScript<br>PHP,MySql</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h1>Programme</h1>
-                    <p>Java<br>VB.net</p>
-                    <a href="#">Learn More</a>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-desktop"></i> 
-                    <h1>Designing</h1>
-                    <p>Adobe photoshop<br>Adobe animate<br>CoralDraw</p>
-                    <a href="#">Learn More</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-----------portfolio--------->
-    
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="java2.png">
-                    <div class="layer">
-                        <h3>Java Project</h3>
-                        <h2>Spices Exporting Company Managemnt System</h2>
-                        <p>The app contents you to the telented people around the world.Download it from play store</p>
-                        <a href="https://github.com/TGUmayanga/Spices_Exporting_Company_Management_System"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="cafe2.jpg">
-                    <div class="layer">
-                        <h3>VB.Net Project</h3>
-                        <h2>Pink Arcade Odrring System</h2>
-                        <p>The app contents you to the telented people around the world.Download it from play store</p>
-                        <a href="https://github.com/TGUmayanga/PinkHutCafe"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="php.jpg">
-                    <div class="layer">
-                        <h3>PHP CodeIgniter Crud System</h3>
-                        <h2>Employee Managemnt System</h2>
-                        <p>The app contents you to the telented people around the world.Download it from play store</p>
-                        <a href="https://github.com/TGUmayanga/Employee-Management-System"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="jaye.jpg">
-                    <div class="layer">
-                        <h3>Wordpress Website</h3>
-                        <h2>Jayasekara Optical Website</h2>
-                        <p>The app contents you to the telented people around the world.Download it from play store</p>
-                        <a href="https://drive.google.com/file/d/135YqslUj93F3qFJ73VTCos9Psn4o8O6u/view"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="hela.png">
-                    <div class="layer">
-                        <h3>Sabra's helabojun Website</h3>
-                        <h2>Build using for JavaScript React </h2>
-                        <p>The app contents you to the telented people around the world.Download it from play store</p>
-                        <a href="https://github.com/TGUmayanga/Sabra-Helabojun-Web.git"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="animate.jpg">
-                    <div class="layer">
-                        <h3>Animate Project</h3>
-                        <h2>About Fishing Attack</h2>
-                        <p>The app contents you to the telented people around the world.Download it from play store</p>
-                        <a href="https://drive.google.com/file/d/12H60khnh-zgmkYPfkHh7ZkxYon-TaRBi/view"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-
-            </div>
-            <a href="https://drive.google.com/file/d/1J9aVjf3EdXP432xPvuJqPe89vEv_47R9/view?usp=sharing" class="btn">See More</a>
-        </div>
-    </div>
-
-    <!------------Contact-------->
-
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p> <i class="fa-solid fa-paper-plane">&nbsp; &nbsp;</i>chamikaumayanga201@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-phone-volume">&nbsp; &nbsp;</i>077-0350508</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=61550093236314&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
-                        <a href="https://instagram.com/chamikaumayanga6?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"></i></a>
-                        <a href="www.linkedin.com/in/chamika-umayanga-7a7905290"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/TGUmayanga"><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-
-                    </div>
-                    <a href="https://drive.google.com/file/d/1RzIVuALvm10ql515_m4iS04wnE-RZSzd/view?usp=sharing" download class="btn btn2">Download CV</a>
-
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                       
-                         <input type="text" name="Name" placeholder="Your Name" required>
-                         <input type="email" name="email" placeholder="your Email" required>
-                         <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                         <button type="submit" class="btn btn2 ">Submit</button>
-                    </form>
-                    <span id="msg">Hello</span>
-                </div>
-            </div>
-        </div>
-       
+    <!----------main container End---------> 
         
-    </div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-        
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-
-        function Closemenu(){
-            sidemenu.style.right = "-200px"; 
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbybrzLJjW-kJNhYR8L9OiU9x28L2uIDU9Xy6NlPpCodSd4yv-bgOOnfJDv1mNVgWr30RA/exec'
-        const form = document.forms['submit-to-google-sheet'] 
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {msg.innerHTML = "Message sent successfully"; setTimeout(function(){msg.innerHTML =""},5000); form.reset()})
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-    
+    <!----------js fies-------->
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html> 
